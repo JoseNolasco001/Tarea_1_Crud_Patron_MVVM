@@ -63,6 +63,7 @@ namespace Test.ViewModel
                 OnPropertyChanged("Id");
             }
         }
+
         public int Edad
         {
             get { return edad; }
@@ -72,6 +73,7 @@ namespace Test.ViewModel
                 OnPropertyChanged("Edad");
             }
         }
+
         public string Email
         {
             get { return email; }
@@ -91,6 +93,7 @@ namespace Test.ViewModel
                 OnPropertyChanged("Nombre");
             }
         }
+
         public ICommand GuardarDatos
         {
             get
@@ -114,6 +117,7 @@ namespace Test.ViewModel
                 return eliminarDatos;
             }
         }
+
         public ICommand NuevosDatos
         {
             get
@@ -140,9 +144,8 @@ namespace Test.ViewModel
 
         public void MouseDoubleClick()
         {
-            var row = item.Id;
-            Cargar(item);
-            Console.WriteLine("row: " + row);
+            if(item!=null)
+                Cargar(item);
         }
 
         private void Guardar()
@@ -205,6 +208,7 @@ namespace Test.ViewModel
             }
             catch (Exception ex) { }
         }
+
         public void Limpiar()
         {
             id = 0;
@@ -213,6 +217,7 @@ namespace Test.ViewModel
             email = null;
             ActualizarCampos();
         }
+
         private void Cargar(Person person)
         {
             id = person.Id;
