@@ -4,3 +4,9 @@ C:\Users\jose_\source\repos\MVVM\PatronMVVM\Test.Model\obj\Debug\Test.Model.cspr
 C:\Users\jose_\source\repos\MVVM\PatronMVVM\Test.Model\obj\Debug\Test.Model.csproj.CoreCompileInputs.cache
 C:\Users\jose_\source\repos\MVVM\PatronMVVM\Test.Model\obj\Debug\Test.Model.dll
 C:\Users\jose_\source\repos\MVVM\PatronMVVM\Test.Model\obj\Debug\Test.Model.pdb
+C:\Users\jose_\source\repos\Tarea_1_Crud_Patron_MVVM\PatronMVVM\Test.Model\bin\Debug\Test.Model.dll
+C:\Users\jose_\source\repos\Tarea_1_Crud_Patron_MVVM\PatronMVVM\Test.Model\bin\Debug\Test.Model.pdb
+C:\Users\jose_\source\repos\Tarea_1_Crud_Patron_MVVM\PatronMVVM\Test.Model\obj\Debug\Test.Model.csproj.AssemblyReference.cache
+C:\Users\jose_\source\repos\Tarea_1_Crud_Patron_MVVM\PatronMVVM\Test.Model\obj\Debug\Test.Model.csproj.CoreCompileInputs.cache
+C:\Users\jose_\source\repos\Tarea_1_Crud_Patron_MVVM\PatronMVVM\Test.Model\obj\Debug\Test.Model.dll
+C:\Users\jose_\source\repos\Tarea_1_Crud_Patron_MVVM\PatronMVVM\Test.Model\obj\Debug\Test.Model.pdb

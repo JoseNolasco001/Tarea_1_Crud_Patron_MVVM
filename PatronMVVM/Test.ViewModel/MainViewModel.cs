@@ -23,11 +23,14 @@ namespace Test.ViewModel
         private ICommand guardarDatos;
         private ICommand eliminarDatos;
         private ICommand nuevosDatos;
+        private ICommand doubleClick;
         private ObservableCollection<Person> peoples;
+
         public MainViewModel()
         {
             peoples = new ObservableCollection<Person>();
         }
+
         public ObservableCollection<Person> Peoples
         { 
             get { return peoples; }
@@ -123,6 +126,25 @@ namespace Test.ViewModel
             }
         }
 
+        public ICommand DoubleClick
+        {
+            get
+            {
+                if (doubleClick == null)
+                {
+                    doubleClick = new RelayCommand(p => this.MouseDoubleClick());
+                }
+                return doubleClick;
+            }
+        }
+
+        public void MouseDoubleClick()
+        {
+            var row = item.Id;
+            Cargar(item);
+            Console.WriteLine("row: " + row);
+        }
+
         private void Guardar()
         {
             bool ban = false;
@@ -148,6 +170,7 @@ namespace Test.ViewModel
                     {
                         peoples[i] = p;
                     }
+                    this.Limpiar();
                 }
 
             }
@@ -188,24 +211,23 @@ namespace Test.ViewModel
             edad = 0;
             nombre = null;
             email = null;
-
-            OnPropertyChanged("Id");
-            OnPropertyChanged("Edad");
-            OnPropertyChanged("Nombre");
-            OnPropertyChanged("Email");
+            ActualizarCampos();
         }
         private void Cargar(Person person)
         {
             id = person.Id;
             edad = person.Edad;
             nombre = person.Nombre;
-            email= person.Email;
+            email = person.Email;
+            ActualizarCampos();
         }
-        public event PropertyChangedEventHandler PropertyChanged;
 
-        protected virtual void OnPropertyChanged(string propertyName)
+        private void ActualizarCampos()
         {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+            OnPropertyChanged("Id");
+            OnPropertyChanged("Edad");
+            OnPropertyChanged("Nombre");
+            OnPropertyChanged("Email");
         }
     }
 }

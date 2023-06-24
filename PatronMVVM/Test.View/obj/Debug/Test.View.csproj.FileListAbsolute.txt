@@ -36,3 +36,22 @@ C:\Users\jose_\source\repos\Tarea 1 Crud Patron MVVM\PatronMVVM\Test.View\obj\De
 C:\Users\jose_\source\repos\Tarea 1 Crud Patron MVVM\PatronMVVM\Test.View\obj\Debug\Test.View.csproj.CopyComplete
 C:\Users\jose_\source\repos\Tarea 1 Crud Patron MVVM\PatronMVVM\Test.View\obj\Debug\Test.View.exe
 C:\Users\jose_\source\repos\Tarea 1 Crud Patron MVVM\PatronMVVM\Test.View\obj\Debug\Test.View.pdb
+C:\Users\jose_\source\repos\Tarea_1_Crud_Patron_MVVM\PatronMVVM\Test.View\bin\Debug\Test.View.exe.config
+C:\Users\jose_\source\repos\Tarea_1_Crud_Patron_MVVM\PatronMVVM\Test.View\bin\Debug\Test.View.exe
+C:\Users\jose_\source\repos\Tarea_1_Crud_Patron_MVVM\PatronMVVM\Test.View\bin\Debug\Test.View.pdb
+C:\Users\jose_\source\repos\Tarea_1_Crud_Patron_MVVM\PatronMVVM\Test.View\bin\Debug\Test.ViewModel.dll
+C:\Users\jose_\source\repos\Tarea_1_Crud_Patron_MVVM\PatronMVVM\Test.View\bin\Debug\Test.ViewModel.pdb
+C:\Users\jose_\source\repos\Tarea_1_Crud_Patron_MVVM\PatronMVVM\Test.View\obj\Debug\Test.View.csproj.AssemblyReference.cache
+C:\Users\jose_\source\repos\Tarea_1_Crud_Patron_MVVM\PatronMVVM\Test.View\obj\Debug\Test.View.csproj.SuggestedBindingRedirects.cache
+C:\Users\jose_\source\repos\Tarea_1_Crud_Patron_MVVM\PatronMVVM\Test.View\obj\Debug\MainWindow.g.cs
+C:\Users\jose_\source\repos\Tarea_1_Crud_Patron_MVVM\PatronMVVM\Test.View\obj\Debug\App.g.cs
+C:\Users\jose_\source\repos\Tarea_1_Crud_Patron_MVVM\PatronMVVM\Test.View\obj\Debug\Test.View_MarkupCompile.cache
+C:\Users\jose_\source\repos\Tarea_1_Crud_Patron_MVVM\PatronMVVM\Test.View\obj\Debug\Test.View_MarkupCompile.lref
+C:\Users\jose_\source\repos\Tarea_1_Crud_Patron_MVVM\PatronMVVM\Test.View\obj\Debug\MainWindow.baml
+C:\Users\jose_\source\repos\Tarea_1_Crud_Patron_MVVM\PatronMVVM\Test.View\obj\Debug\Test.View.g.resources
+C:\Users\jose_\source\repos\Tarea_1_Crud_Patron_MVVM\PatronMVVM\Test.View\obj\Debug\Test.View.Properties.Resources.resources
+C:\Users\jose_\source\repos\Tarea_1_Crud_Patron_MVVM\PatronMVVM\Test.View\obj\Debug\Test.View.csproj.GenerateResource.cache
+C:\Users\jose_\source\repos\Tarea_1_Crud_Patron_MVVM\PatronMVVM\Test.View\obj\Debug\Test.View.csproj.CoreCompileInputs.cache
+C:\Users\jose_\source\repos\Tarea_1_Crud_Patron_MVVM\PatronMVVM\Test.View\obj\Debug\Test.View.csproj.CopyComplete
+C:\Users\jose_\source\repos\Tarea_1_Crud_Patron_MVVM\PatronMVVM\Test.View\obj\Debug\Test.View.exe
+C:\Users\jose_\source\repos\Tarea_1_Crud_Patron_MVVM\PatronMVVM\Test.View\obj\Debug\Test.View.pdb

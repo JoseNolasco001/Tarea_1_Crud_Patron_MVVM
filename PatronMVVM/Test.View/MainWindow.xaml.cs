@@ -24,6 +24,5 @@ namespace Test.View
         {
             InitializeComponent();
         }
-
     }
 }

@@ -4,6 +4,6 @@
     "\\Test.View",
     "\\Test.ViewModel"
   ],
-  "SelectedNode": "\\Test.View\\MainWindow.xaml",
+  "SelectedNode": "\\Test.ViewModel\\MainViewModel.cs",
   "PreviewInSolutionExplorer": false
 }

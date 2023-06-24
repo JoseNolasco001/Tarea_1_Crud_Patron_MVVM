@@ -3,39 +3,34 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:vm="clr-namespace:Test.ViewModel;assembly=Test.ViewModel"
+        xmlns:vm="clr-namespace:Test.ViewModel;assembly=Test.ViewModel"        
         xmlns:local="clr-namespace:Test.View"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize">
     <Window.Resources>
         <vm:MainViewModel x:Key="MainViewModel"></vm:MainViewModel>
     </Window.Resources>
 
-    <Grid DataContext="{Binding Source={StaticResource MainViewModel}}" RenderTransformOrigin="0.497,0.391">
-        <Border CornerRadius="20" BorderThickness="4" BorderBrush="#2596BE" Opacity="0.95">
-            <Border.Background>
-                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-                    <GradientStop Color="#313437" Offset="0.0"/>
-                    <GradientStop Color="#516473" Offset="1.5"/>
-                </LinearGradientBrush>
-            </Border.Background>
-        </Border>
+    <Grid DataContext="{Binding Source={StaticResource MainViewModel}}" Background="#313437">
 
         <!--Cabecera-->
-        <Label Content="Id" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top"/>
-        <TextBox Text="{Binding Id, UpdateSourceTrigger=PropertyChanged }" HorizontalAlignment="Left" Margin="60,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="20"/>
+        <Label x:Name="IdLb" Content="Id" HorizontalAlignment="Left" Margin="10,30,0,0" Foreground="White" VerticalAlignment="Top"/>
+        <TextBox x:Name="IdTB" Text="{Binding Id, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="70,30,0,0"  VerticalAlignment="Top" Width="120" Height="20" />
 
-        <Label Content="Edad" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top"/>
-        <TextBox Text="{Binding Edad, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="60,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="20"/>
+        <Label x:Name="EdadLb" Content="Edad" HorizontalAlignment="Left" Margin="10,60,0,0" Foreground="White" VerticalAlignment="Top"/>
+        <TextBox x:Name="EdadTB" Text="{Binding Edad, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="70,60,0,0" VerticalAlignment="Top" Width="120" Height="20"></TextBox>
 
-        <Label Content="Nombre" HorizontalAlignment="Left" Margin="10,90,0,0" VerticalAlignment="Top"/>
-        <TextBox Text="{Binding Nombre, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="60,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="20"/>
+        <Label x:Name="NombreLb" Content="Nombre" HorizontalAlignment="Left" Margin="10,90,0,0" Foreground="White" VerticalAlignment="Top"/>
+        <TextBox x:Name="NombreTB" Text="{Binding Nombre, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="70,90,0,0" VerticalAlignment="Top" Width="250" Height="20"></TextBox>
 
-        <Label Content="Email" HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top"/>
-        <TextBox Text="{Binding Email, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="60,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="20"/>
+        <Label x:Name="EmailLb" Content="Email" HorizontalAlignment="Left" Margin="10,120,0,0" Foreground="White" VerticalAlignment="Top"/>
+        <TextBox x:Name="EmailTB" Text="{Binding Email, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="70,120,0,0" VerticalAlignment="Top" Width="250" Height="20"></TextBox>
 
-        <DataGrid Width="600" ItemsSource="{Binding Peoples}" SelectedItem="{Binding Item}"  AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True" Height="250" HorizontalAlignment="Left" Margin="10,150,0,43">
-            
+        <DataGrid x:Name="dataGrid" Width="600" Height="280" ItemsSource="{Binding Peoples}" SelectedItem="{Binding Item}" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True" HorizontalAlignment="Left" Margin="10,150,0,43" RenderTransformOrigin="0.499,0.584">
+            <DataGrid.InputBindings>
+                <MouseBinding MouseAction="LeftDoubleClick" Command="{Binding DoubleClick}"/>
+            </DataGrid.InputBindings>
+
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Id" Binding="{Binding Id}" Width="50"/>
                 <DataGridTextColumn Header="Edad" Binding="{Binding Edad}" Width="50"/>
@@ -43,9 +38,10 @@
                 <DataGridTextColumn Header="Email" Binding="{Binding Email}" Width="*"/>
             </DataGrid.Columns>
         </DataGrid>
-
+        
         <Button Content="Guardar" HorizontalAlignment="Left" Width="80" Height="30" Margin="650,150,0,0" VerticalAlignment="Top" Command="{Binding GuardarDatos}"></Button>
         <Button Content="Nuevo" HorizontalAlignment="Left" Width="80" Height="30" Margin="650,200,0,0" VerticalAlignment="Top" Command="{Binding NuevosDatos}"/>
         <Button Content="Eliminar" HorizontalAlignment="Left" Width="80" Height="30" Margin="650,250,0,0" VerticalAlignment="Top" Command="{Binding EliminarDatos}"/>
+    
     </Grid>
 </Window>
